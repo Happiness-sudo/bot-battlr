@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+Bot Battlr — Phase 2 Code Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Bot Battlr, the one and only spot in the galaxy where you can build your own bot army!  
+This React web app allows users to browse a list of bots, view details, and enlist them into a personal army.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+Project Overview
 
-### `npm start`
+This project was created as part of the Phase 2 React Code Challenge.  
+It demonstrates core React concepts including components, props, state management, and event handling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app also includes data fetching from a local JSON server and features clean, reusable component structure.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+Learning Goals
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Practice building React components and passing props
+- Manage state using React Hooks
+- Handle events to update the UI dynamically
+- Fetch and display data from a local server
+- Maintain a clear and modular component structure
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Setup Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these steps to run the app locally:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repository
+   ```bash
+   git clone git@github.com:Happiness-sudo/bot-battlr.git
+   cd bot-battlr
+   Install dependencies
+   ```
 
-### `npm run eject`
+bash
+Copy code
+npm install
+Start the backend (JSON Server)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy code
+npx json-server --watch db.json --port 8001
+The server will run at:
+http://localhost:8001/bots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the React app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+npm start
+The app will open automatically at:
+http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Features (Core Deliverables)
+View all bots — Displays a list of available bots from the backend
+Enlist bots — Click a bot to add it to your army (no duplicates)
+Release bots — Click a bot in “Your Bot Army” to remove it
+Discharge bots — Click the red “x” to permanently delete a bot from the backend
+Persistent data — All bot data is stored and managed in db.json
 
-## Learn More
+Advanced Features (Bonus)
+FilterBar — Filter bots by class (Support, Medic, Assault, etc.)
+SortBar — Sort bots by health, armor, or damage
+Responsive UI — Clean layout and modern styling
+Hover effects — Smooth visual feedback for better user experience
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Components Structure
+pgsql
+Copy code
+src/
+├── components/
+│ ├── BotCard.js
+│ ├── BotCollection.js
+│ ├── YourBotArmy.js
+│ ├── FilterBar.js
+│ ├── SortBar.js
+│ └── index.js
+├── App.js
+├── index.js
+├── App.css
+└── db.json
+App.js — Manages state, event handlers, and data fetching
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+BotCollection.js — Displays all available bots
 
-### Code Splitting
+YourBotArmy.js — Shows enlisted bots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+BotCard.js — Reusable component for displaying bot details
 
-### Analyzing the Bundle Size
+FilterBar.js & SortBar.js — Manage sorting and filtering functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Technologies Used
+React.js (Hooks + Functional Components)
 
-### Making a Progressive Web App
+JSON Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+JavaScript (ES6+)
 
-### Advanced Configuration
+CSS3 (Flexbox & Grid)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+API Endpoints
+Method Endpoint Description
+GET /bots Fetch all bots
+DELETE /bots/:id Delete a specific bot
 
-### Deployment
+Example Bot Data
+json
+Copy code
+{
+"id": 101,
+"name": "wHz-93",
+"health": 94,
+"damage": 20,
+"armor": 63,
+"bot_class": "Support",
+"catchphrase": "1010010101001101100011000111101",
+"avatar_url": "https://robohash.org/nostrumrepellendustenetur.png?size=300x300&set=set1"
+}
+Rubric Alignment
+Rubric Area Description Achieved
+Props & State State held in correct component, props passed efficiently
+Code Structure Functional components, hooks, destructuring used
+Rendering All features rendered correctly and interactively
+Advanced Features Sorting, filtering, reusable components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Author
+Happiness Ngeete
+GitHub: Happiness-sudo
+Phase 2 — Software Engineering Program
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+“Build. Enlist. Dominate.”
+The galaxy awaits your Bot Army.
