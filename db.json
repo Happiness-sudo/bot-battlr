@@ -1,0 +1,104 @@
+{
+  "bots": [
+    {
+      "id": 1,
+      "name": "Aegis-01",
+      "health": 120,
+      "damage": 40,
+      "armor": 80,
+      "bot_class": "Defender",
+      "catchphrase": "Shield protocols engaged. You’re safe with me.",
+      "avatar_url": "https://robohash.org/aegis01.png"
+    },
+    {
+      "id": 2,
+      "name": "Blaze-22",
+      "health": 95,
+      "damage": 70,
+      "armor": 40,
+      "bot_class": "Assault",
+      "catchphrase": "Burn bright, burn fast, and never look back.",
+      "avatar_url": "https://robohash.org/blaze22.png"
+    },
+    {
+      "id": 3,
+      "name": "Cura-07",
+      "health": 150,
+      "damage": 20,
+      "armor": 50,
+      "bot_class": "Support",
+      "catchphrase": "I patch wounds faster than you can take them.",
+      "avatar_url": "https://robohash.org/cura07.png"
+    },
+    {
+      "id": 4,
+      "name": "Echo-11",
+      "health": 110,
+      "damage": 55,
+      "armor": 60,
+      "bot_class": "Scout",
+      "catchphrase": "Silent steps, loud results.",
+      "avatar_url": "https://robohash.org/echo11.png"
+    },
+    {
+      "id": 5,
+      "name": "Titan-88",
+      "health": 200,
+      "damage": 30,
+      "armor": 100,
+      "bot_class": "Defender",
+      "catchphrase": "I am the wall between chaos and order.",
+      "avatar_url": "https://robohash.org/titan88.png"
+    },
+    {
+      "id": 6,
+      "name": "Nova-5",
+      "health": 80,
+      "damage": 90,
+      "armor": 35,
+      "bot_class": "Assault",
+      "catchphrase": "One shot, one explosion. Guaranteed.",
+      "avatar_url": "https://robohash.org/nova5.png"
+    },
+    {
+      "id": 7,
+      "name": "Zephyr-9",
+      "health": 100,
+      "damage": 60,
+      "armor": 45,
+      "bot_class": "Scout",
+      "catchphrase": "Swift as the wind, sharp as my code.",
+      "avatar_url": "https://robohash.org/zephyr9.png"
+    },
+    {
+      "id": 8,
+      "name": "Pulse-19",
+      "health": 130,
+      "damage": 25,
+      "armor": 55,
+      "bot_class": "Support",
+      "catchphrase": "Healing frequency online — stay strong, team.",
+      "avatar_url": "https://robohash.org/pulse19.png"
+    },
+    {
+      "id": 9,
+      "name": "Vortex-X",
+      "health": 140,
+      "damage": 65,
+      "armor": 60,
+      "bot_class": "Assault",
+      "catchphrase": "I spin destruction into perfection.",
+      "avatar_url": "https://robohash.org/vortexx.png"
+    },
+    {
+      "id": 10,
+      "name": "Specter-02",
+      "health": 90,
+      "damage": 75,
+      "armor": 40,
+      "bot_class": "Scout",
+      "catchphrase": "You’ll never see me coming.",
+      "avatar_url": "https://robohash.org/specter02.png"
+    }
+  ]
+}
